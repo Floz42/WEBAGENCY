@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <!-- HEADER WITH PRINCIPAL COMPONENTS AND SEO TAGS -->
+    <head>
+        <meta name="author" content="Florian THIEBAUD - WEBAGENCY" />
+        <meta name="copyright" content="©2019 WEBAGENCY - Paris " />
+        <meta name="description" content="WEBAGENCY, l'agence de tous vos projets." />
+        <meta name="keywords" content="agence, web, création, design, site, ecommerce, vitrine, paris" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="WEBAGENCY - Saint-Etienne" />
+        <meta property="og:type" content="website" />       
+        <meta property="og:url" content="http://floz-workshop.fr/webagency/" />
+        <meta property="og:image" content="http://floz-workshop.fr/webagency/public/img/logo.png" />
+        <link rel="stylesheet" href="public/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="public/css/breakpoints.css"> 
+        <link rel="shortcut icon" href="public/img/ico/favicon.ico" />
+        <title> WebAgency - Paris </title>
+    </head>
+
+    <!-- BODY OF WEB PAGE WITH A NAVBAR, FOUR SECTIONS AND A FOOTER -->
+    <body>
+        <div id="page">
+
+    <!-- LOGO & NAVBAR (FIXED) -->
+    <header>
+        <div class="flex_header">
+            <img src="public/img/logo.png" alt="logo" class="logoWebAgency"/>
+            <input type="checkbox" id="burger" />
+            <label for="burger">
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+            </label>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#" title="accueil">Accueil</a></li>
+                    <li><a href="#services" title="services">Services</a></li>
+                    <li><a href="#projects" title="portfolio">Portfolio</a></li>
+                    <li><a id="link_contact" href="#contact" title="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- FIRST SECTION : SLIDER -->
+    <section id="accueil">
+        <div class="slider">
+            <figure>
+                <img src="public/img/slider/bg1.jpg" alt="slide1"/>
+                <img src="public/img/slider/bg2.jpg" alt="slide2"/>
+            </figure>
+            <div class="text_slider">
+                <h1 class="title_slider"><span class="webAgency">WEBAGENCY : </span>L'AGENCE DE TOUS VOS PROJETS !</h1>
+                <h4>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</h4>
+                <button class="more" id="services_anchor">Plus d'infos</button>
+            </div>
+            <div class="progress_bar"></div>
+            <div class="chevrons">
+                <i class="fa fa-chevron-left chevron_left"></i>
+                <i class="fas fa-chevron-right chevron_right"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECOND SECTION : OUR SERVICES -->
+    <section id="services">
+            <div class="first_block_services">
+                <h2 class="ourServices">NOS SERVICES</h2>
+                <div class="separation">
+                    <div class="separate_line"></div>
+                    <div class="separate_circle"></div>
+                </div>
+                <p class="services_description">WebAgency saura répondre à toutes vos attentes, que ce soit pour un site vitrine, un site e-commerce, un blog ou encore tout autre type de projet. </p>
+            </div>
+            
+            <div class="second_block_services">
+                <div class="first_block_description">
+                    <img src="public/img/main-feature.png" alt="Computer" class="computer" />
+                </div>
+                <div class="second_block_description">
+                    <div class="one_service">
+                        <div class="decoration_circle1"></div>
+                        <div class="one_description">
+                            <h3>UX Design</h3>Tous nos sites web et applications web sont pensés de manière à ce que l'expérience utilisateur soit la meilleure possible.
+                        </div>
+                    </div>
+                    <div class="one_service">
+                        <div class="decoration_circle2"></div>
+                        <div class="one_description">
+                            <h3>UI Design</h3>Nous mettons un point d'honneur à ce que l'ergonomie et la facilité de navigation des interfaces de sites que nous concevons soient des plus optimales.
+                        </div>
+                    </div>
+                    <div class="one_service">
+                        <div class="decoration_circle3"></div>
+                        <div class="one_description" id="projects_anchor">
+                            <h3>SEO</h3>Nous mettons en place des outils de référencement naturel pour que votre site soit dans les premiers résultats des moteurs de recherche.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    <!-- THIRD SECTION : LAST PROJECTS -->
+    <section id="projects">
+        <div class="first_block_projects">
+            <h2 class="title_projects">NOS PROJETS</h2>
+            <div class="separation">
+                <div class="separate_line"></div>
+                <div class="separate_circle"></div>
+            </div>
+            <p class="projects_description">Notre solide expérience dans le domaine du développement nous permet de travailler sur tous types de projets, du site vitrine pour les artisans commerçants aux sites e-commerce pour de grandes enseignes, en voici quelques exemples : </p>
+        </div>
+        <nav class="buttons_projects">
+            <input type="radio" name="projects" id="item1" checked/>
+            <input type="radio" name="projects" id="item2" />
+            <input type="radio" name="projects" id="item3" />
+            <input type="radio" name="projects" id="item4" />
+            <ul>
+                <a href="#all_works"><li id="li1"><label for="item1">All Works</label><div id="t1" class="triangle"></div></li></a>
+                <a href="#creative"><li id="li2"><label for="item2">Creative</label><div id="t2" class="triangle"></div></li></a>
+                <a href="#corporate"><li id="li3"><label for="item3">Corporate</label><div id="t3" class="triangle"></div></li></a>
+                <a href="#portfolio"><li id="li4"><label for="item4">Portfolio</label><div id="t4" class="triangle"></div></li></a>
+            </ul>
+        </nav>
+        <div class="anchor" id="all_works"></div>
+        <div class="anchor" id="creative"></div>
+        <div class="anchor" id="corporate"></div>
+        <div class="anchor" id="portfolio"></div>
+        
+        <div class="all_projects">
+            <figure class="project_infos" id="project1">
+                <figcaption class="text_project">
+                    <h3>Monsieur Lunettes</h3>
+                    <p>Parce que bien voir est essentiel !</p>
+                </figcaption>
+                <div class="icone_project">
+                    <a href="#"><div class="eye_project"></div></a>
+                </div>
+                <img src="public/img/portfolio/01.jpg" alt="glasses"/>  
+            </figure>
+            <figure class="project_infos" id="project2">
+                <figcaption class="text_project">
+                    <h3>Mon lapin pas crétin</h3>
+                    <p>Un jeu évolutif de 2 à 8 ans.</p>
+                </figcaption>
+                <div class="icone_project">
+                    <a href="#"><div class="eye_project"></div></a>
+                </div>
+                <img src="public/img/portfolio/02.jpg" alt="rabbit"/>  
+            </figure>
+            <figure class="project_infos" id="project3">
+                <figcaption class="text_project">
+                    <h3>Pompadour</h3>
+                    <p>Vos cheveux ont du style !</p>
+                </figcaption>
+                <div class="icone_project">
+                    <a href="#"><div class="eye_project"></div></a>
+                </div>
+                <img src="public/img/portfolio/03.jpg" alt="pompadour"/>  
+            </figure>
+            <figure class="project_infos" id="project4">
+                <figcaption class="text_project">
+                    <h3>Origami pour les nuls</h3>
+                    <p>Impressionnez en soirée !!</p>
+                </figcaption>
+                <div class="icone_project">
+                    <a href="#"><div class="eye_project"></div></a>
+                </div>
+                <img src="public/img/portfolio/04.jpg" alt="book"/>  
+            </figure>
+            <figure class="project_infos" id="project5">
+                <figcaption class="text_project">
+                    <h3>Paper-bag</h3>
+                    <p>Pour plus de tortues !</p>
+                </figcaption>
+                <div class="icone_project">
+                    <a href="#"><div class="eye_project"></div></a>
+                </div>
+                <img src="public/img/portfolio/05.jpg" alt="bags"/>  
+            </figure>
+            <figure class="project_infos" id="project6">
+                <figcaption class="text_project">
+                    <h3>Bali</h3>
+                    <p>Pas une île, un paradis !</p>
+                </figcaption>
+                <div class="icone_project">
+                    <a href="#"><div class="eye_project"></div></a>
+                </div>
+                <img src="public/img/portfolio/06.jpg" alt="town"/>  
+            </figure>
+            <figure class="project_infos" id="project7">
+                <figcaption class="text_project">
+                    <h3>Fusée détresse</h3>
+                    <p>Pour échapper à votre femme.</p>
+                </figcaption>
+                <div class="icone_project">
+                    <a href="#"><div class="eye_project"></div></a>
+                </div>
+                <img src="public/img/portfolio/07.jpg" alt="rocket"/>  
+            </figure>
+            <figure class="project_infos" id="project8">
+                <figcaption class="text_project">
+                    <h3>Floz</h3>
+                    <p>The best best Framework.</p>
+                </figcaption>
+                <div class="icone_project">
+                    <a href="#"><div class="eye_project" id="contact_anchor"></div></a>
+                </div>
+                <img src="public/img/portfolio/08.jpg" alt="workshop"/>  
+            </figure>   
+        </div>
+    </section>
+
+    <!-- FOURTH SECTION : MAP AND FORM CONTACT -->
+    <section id="contact">
+        <div class="map">
+            <div class="font_map" onClick="style.pointerEvents='none'"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2214246079734!2d2.3476369150261216!3d48.87305530762912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25%20Rue%20d&#39;Hauteville%2C%2075010%20Paris!5e0!3m2!1sfr!2sfr!4v1574259332718!5m2!1sfr!2sfr" class="map_google"></iframe>            
+            <div class="form">
+                <form class="contact">
+                    <h3>Contact Info</h3>
+                    <p class="webagency_text_form">WebAgency SAS</p>
+                    <p>25 Rue d'Hauteville 75010 Paris <br />
+                    Tel : 01 02 03 04 05</p>
+                    <input type="text" name="nom" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea class="message_form" name="message" placeholder="Message" required></textarea>
+                    <input type="submit" class="form_button" value="Send Message">
+                </form>
+            </div>
+        </div>
+    </section>
+        </div>
+    </body>
+</html>
